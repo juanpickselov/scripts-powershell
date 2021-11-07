@@ -1,10 +1,9 @@
 Param (
     [switch]$runThatFunc,
     [switch]$runThatOtherFunc = $(throw "-runThatOtherFunc is required.")
-
 )
 
-clear
+Clear-Host
 
 function doSomething() {
     Write-Host This is just a test
@@ -13,7 +12,6 @@ function doSomething() {
 if ($runThatFunc) {
         doSomething
 }
-
 
 function saySomething() {
     Write-Host "I'm giving up on you"
