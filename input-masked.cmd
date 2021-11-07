@@ -1,7 +1,7 @@
 @echo OFF
 cls
 
-set psScript=$securePwd = Read-Host "Enter prhase" -AsSecureString; ^
+set psScript=$securePwd = Read-Host "Enter phrase" -AsSecureString; ^
 $plainPwd =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($securePwd)); ^
 Write-Host $plainPwd
 
